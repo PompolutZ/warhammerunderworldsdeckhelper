@@ -6,55 +6,15 @@ import { dbref } from './utils/firebase';
 import logo from './logo.svg';
 import './App.css';
 import Card from './components/Card';
+import Cards from './components/Cards';
+import Warbands from './components/Warbands';
+import Decks from './components/Decks/index';
+import Deck from './components/Deck';
+import Expansions from './components/Expansions';
 
 const uuidv4 = require('uuid/v4');
 
 
-class Cards extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      cards: [],
-      error: '',
-      loading: true
-    }
-  }
-
-  async componentDidMount() {
-    try {
-      const cardsSnapshot = await dbref('/cards').once('value');
-      const cardsDb = cardsSnapshot.val();
-      this.setState({loading: false});
-
-      console.log('CardsList: ', cardsDb);
-      const cards = [];
-      for (let card in cardsDb) {
-        const { name } = cardsDb[card];
-        cards.push(<Link className="cardLink" to={`/cards/${card}`} key={uuidv4()}>{name}</Link>)
-      }
-
-      this.setState({cards: cards});
-    } catch (error) {
-
-    }
-  }
-
-  render() {
-    const cardsList = this.state.loading ? <span>Loading...</span> : this.state.cards;
-
-    if(this.state.error) {
-      return <h1>Error: {this.state.error}.</h1>
-    }
-    return (
-      <div>
-        <div style={{ marginLeft: 20}}>
-          { cardsList }
-        </div>
-      </div>
-    );
-  }
-}
 
 const Home = () => (
   <h1>Home</h1>
@@ -83,6 +43,21 @@ class App extends Component {
                         CARDS
                       </NavItem>
                     </LinkContainer>
+                    <LinkContainer to="/decks">
+                      <NavItem eventKey={1}>
+                        DECKS
+                      </NavItem>
+                    </LinkContainer>
+                    <LinkContainer to="/warbands">
+                      <NavItem eventKey={1}>
+                        WARBANDS
+                      </NavItem>
+                    </LinkContainer>
+                    <LinkContainer to="/expansions">
+                      <NavItem eventKey={1}>
+                        EXPANSIONS
+                      </NavItem>
+                    </LinkContainer>
                   </Nav>
                   {/* <Nav pullRight>
                     <LinkContainer to="/Login">
@@ -97,7 +72,11 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/cards" component={Cards} />
+              <Route exact path="/decks" component={Decks} />
+              <Route exact path="/warbands" component={Warbands} />
+              <Route exact path="/expansions" component={Expansions} />
               <Route path="/cards/:number?" component={Card} />
+              <Route path="/deck/:id?" component={Deck} />
             </Switch>
           </div>
         </Router>

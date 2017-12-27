@@ -21,7 +21,7 @@ class Card extends Component {
     async componentDidMount() {
       try {
         console.log("Card: ", this.props.match.params.number);
-        const cardSnapshot = await dbref(`/cards/${this.props.match.params.number}`).once('value');
+        const cardSnapshot = await dbref(`/cardsdesc/${this.props.match.params.number}`).once('value');
         console.log("Card: ", cardSnapshot.val());
         this.setState({card: cardSnapshot.val()});
       } catch(error) {
