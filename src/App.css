@@ -29,3 +29,12 @@
   display: flex;
   text-align: left;
 }
+
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #3B9979;
+  color: white;
+  text-align: center;
+}

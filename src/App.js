@@ -11,6 +11,7 @@ import Warbands from './components/Warbands';
 import Decks from './components/Decks/index';
 import Deck from './components/Deck';
 import Expansions from './components/Expansions';
+import Footer from './components/Footer';
 
 const uuidv4 = require('uuid/v4');
 
@@ -78,6 +79,7 @@ class App extends Component {
               <Route path="/cards/:number?" component={Card} />
               <Route path="/deck/:id?" component={Deck} />
             </Switch>
+            <Footer />
           </div>
         </Router>
       </div>
