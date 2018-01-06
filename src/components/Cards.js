@@ -21,7 +21,7 @@ export default class Cards extends Component {
   
     async componentDidMount() {
       try {
-        const cardsSnapshot = await dbref('/cards').once('value');
+        const cardsSnapshot = await dbref('/cardslist').once('value');
         const cardsDb = cardsSnapshot.val();
         this.setState({loading: false});
   

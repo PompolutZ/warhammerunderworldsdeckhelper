@@ -9,7 +9,6 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         onViewChange: (e) => {
-            console.log("PING!");
             dispatch(setView(e.target.value));
         }
     } 
