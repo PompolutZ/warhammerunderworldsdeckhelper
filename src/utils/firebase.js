@@ -15,4 +15,6 @@ export const auth = firebase.auth();
 
 export const dbref = path => firebase.database().ref(path);
 
+export const storage = firebase.storage();
+
 export default firebase;
