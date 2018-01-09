@@ -31,8 +31,8 @@ class Card extends Component {
       }
 
       try {
-        const cardUrl = await storage.refFromURL(`gs://wudeckhelper.appspot.com/cards_x5/${this.props.match.params.number}.jpg`).getDownloadURL();
-        this.setState({url: cardUrl});
+        // const cardUrl = await storage.refFromURL().getDownloadURL();
+        this.setState({url: `/imgs/${this.props.match.params.number}.jpg`});
       } catch (error) {
         console.log('Error loading image: ', error);
       }
