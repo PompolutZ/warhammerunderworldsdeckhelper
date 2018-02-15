@@ -32,7 +32,7 @@ class Card extends Component {
 
       try {
         // const cardUrl = await storage.refFromURL().getDownloadURL();
-        this.setState({url: `/imgs/${this.props.match.params.number}.jpg`});
+        this.setState({url: `http://res.cloudinary.com/ds0cwthk3/image/upload/v1516046147/001.jpg`});
       } catch (error) {
         console.log('Error loading image: ', error);
       }

@@ -388,6 +388,37 @@
     "cards" : [ 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 239, 241, 248, 255, 256, 260, 282, 288, 291, 302, 305, 308, 312, 315, 318, 319, 320, 341, 345, 346, 359, 361, 381, 382, 387, 396, 402, 405, 411, 416, 423, 430 ],
     "title" : "Ironskull's Boyz"
   } ],
+  "spoilers" : {
+    "1" : {
+      "name" : "A Worthy Skull",
+      "faction" : "GBR",
+      "type": "OBJECTIVE",
+      "score": 1,
+      "rule": "Score this in an end phase if your warband took an enemy leader out of action in the preceding action phase."
+    },
+    "30" : {
+      "name" : "Awe-Inspiring",
+      "faction" : "SHL",
+      "type": "OBJECTIVE",
+      "score": 1,
+      "rule": "Score this immediately if your warband has taken two or more fighters out of action in this phase."
+    },
+    "59" : {
+      "name" : "Battle Without End",
+      "faction" : "SG",
+      "type": "OBJECTIVE",
+      "score": 1,
+      "rule": "Score this in an end phase if two or more friendly fighters returned to the battlefield in the preceding action phase."
+    },
+    "236" : {
+      "name" : "Annihilation",
+      "faction" : "U",
+      "type": "OBJECTIVE",
+      "score": 5,
+      "rule": "Score this in an end phase if all enemy fighters have been taken out of action.",
+      "rule34": "2 or more warbands are out of action."
+    }
+  }, 
   "fighters" : {
     "angharad" : {
       "attack" : {
