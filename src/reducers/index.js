@@ -1,11 +1,10 @@
 import { combineReducers } from 'redux';
 import { cardsView } from './cards';
-
-const currentUser = (state = {}, action) => state;
+import user from './auth';
 
 const appReducers = combineReducers({
-    currentUser,
-    cardsView
+    user: user,
+    cardsView: cardsView
 });
 
 export default appReducers;
