@@ -20,7 +20,7 @@ const uuidv4 = require('uuid/v4');
 
 
 const Home = () => (
-  <h1>Home</h1>
+  <h1>{React.version}</h1>
 );
 
 const LogoutButton = () => (

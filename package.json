@@ -8,6 +8,7 @@
     "firebaseui": "^2.5.1",
     "lodash": "^4.17.4",
     "react": "^16.2.0",
+    "react-animate-height": "^1.0.2",
     "react-bootstrap": "^0.31.5",
     "react-dom": "^16.2.0",
     "react-redux": "^5.0.6",
