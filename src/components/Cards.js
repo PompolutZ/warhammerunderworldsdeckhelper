@@ -1,9 +1,21 @@
 import React, {Component} from 'react';
-import { Grid, Col, Row, FormGroup, FormControl, ControlLabel, Image, Button } from 'react-bootstrap';
+import { 
+  Grid, 
+  Col, 
+  Row, 
+  FormGroup, 
+  FormControl, 
+  ControlLabel, 
+  Image, 
+  Button,
+  ButtonToolbar,
+  ToggleButtonGroup,
+  ToggleButton } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { dbref } from '../utils/firebase';
 import { cardsDb } from '../data/index';
 import AnimateHeight from 'react-animate-height';
+import _ from 'lodash';
 
 const uuidv4 = require('uuid');
 
@@ -54,6 +66,7 @@ export default class Cards extends Component {
       }
 
       this.onViewChanged = this.onViewChanged.bind(this);
+      this.handleSetFilterChange = this.onSetFilterChange.bind(this);
     }
   
     async componentDidMount() {
@@ -63,11 +76,14 @@ export default class Cards extends Component {
         // this.setState({loading: false});
   
         // console.log('CardsList: ', cardsDb);
+          
+        console.log(_.keys(_.pickBy(cardsDb, (v, k) => v['set'] === 6)));  
+
         const cards = [];
         const leadingZeros = ['', '0', '00']
         for (let card in cardsDb) {
           const img = `01${leadingZeros[3 - card.toString().length]}${card}.png`;
-          cards.push(<ImageCard img={img} number={card} name={cardsDb[card]['name']} />);
+          cards.push(<ImageCard img={img} number={card} name={cardsDb[card]['name']} key={`01${leadingZeros[3 - card.toString().length]}${card}`} />);
           // if(cardsList[card]) {
 
           //   //cards.push(<Link className="cardLink" to={`/cards/${card}`} key={uuidv4()}>{`${card}: ${cardsList[card]}`}</Link>)
@@ -83,6 +99,10 @@ export default class Cards extends Component {
     onViewChanged(e) {
       console.log(e.target.value);
     }
+
+    onSetFilterChange(sets) {
+      console.log(sets);
+    }
   
     render() {
       const cardsList = this.state.loading ? <span>Loading...</span> : this.state.cards;
@@ -92,6 +112,23 @@ export default class Cards extends Component {
       }
       return (
         <Grid>
+          <Row className="show-grid">
+            <Col md={12}>
+              <div>
+                <ButtonToolbar>
+                  <ToggleButtonGroup type="checkbox" onChange={this.onSetFilterChange}>
+                    <ToggleButton value="1"><Image style={{width: 50}} src={`assets/icons/sepulchral-guard-icon.png`}  /></ToggleButton>
+                    <ToggleButton value="2"><Image style={{width: 50}} src={`assets/icons/ironskulls-boyz-icon.png`}  /></ToggleButton>
+                    <ToggleButton value="3"><Image style={{width: 50}} src={`assets/icons/the-chosen-axes-icon.png`}  /></ToggleButton>
+                    <ToggleButton value="4"><Image style={{width: 50}} src={`assets/icons/spiteclaws-swarm-icon.png`}  /></ToggleButton>
+                    <ToggleButton value="5"><Image style={{width: 50}} src={`assets/icons/magores-fiends-icon.png`}  /></ToggleButton>
+                    <ToggleButton value="6"><Image style={{width: 50}} src={`assets/icons/the-farstriders-icon.png`}  /></ToggleButton>
+                  </ToggleButtonGroup>
+                </ButtonToolbar>                
+              </div>
+            </Col>
+          </Row>
+          
           <Row className="show-grid">
             <Col md={4}>
               <div style={{ marginLeft: 20}}>

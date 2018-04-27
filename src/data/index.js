@@ -9,6 +9,15 @@ export const faction = ["Universal", "Garrek's Reavers", "Steelheart's Champions
 export const cardSet = ["Core set", "Sepulchral Guard expansion", "Ironskull's Boyz expansion", "The Chosen Axes expansion", "Spiteclaw's Swarm expansion", "Magore's Fiends expansion", "The Farstriders expansion"];
 export const cardType = ["Objective", "Ploy", "Upgrade"]
 
+export const expansionCards = {
+    1: ["59", "60", "61", "62", "63", "64", "65", "66", "67", "68", "69", "70", "71", "72", "73", "74", "75", "76", "77", "78", "79", "80", "81", "82", "83", "84", "85", "86", "87", "240", "250", "254", "259", "281", "287", "290", "293", "296", "297", "299", "324", "325", "332", "339", "353", "357", "364", "368", "370", "371", "375", "377", "379", "380", "393", "401", "414", "418", "420", "426"],
+    2: ["88", "89", "90", "91", "92", "93", "94", "95", "96", "97", "98", "99", "100", "101", "102", "103", "104", "105", "106", "107", "108", "109", "110", "111", "112", "113", "114", "115", "116", "239", "241", "248", "255", "256", "260", "282", "288", "291", "302", "305", "308", "312", "315", "318", "319", "320", "341", "345", "346", "359", "381", "382", "387", "396", "402", "405", "411", "416", "423", "430"],
+    3: ["117", "118", "119", "120", "121", "122", "123", "124", "125", "126", "127", "128", "129", "130", "131", "132", "133", "134", "135", "136", "137", "138", "139", "140", "141", "142", "143", "144", "145", "237", "251", "268", "270", "277", "280", "284", "294", "300", "301", "303", "310", "314", "316", "321", "327", "337", "344", "348", "366", "369", "392", "400", "403", "404", "408", "409", "417", "419", "425", "435"],
+    4: ["146", "147", "148", "149", "150", "151", "152", "153", "154", "155", "156", "157", "158", "159", "160", "161", "162", "163", "164", "165", "166", "167", "168", "169", "170", "171", "172", "173", "174", "235", "242", "249", "257", "272", "274", "276", "279", "286", "295", "298", "309", "313", "317", "336", "342", "349", "351", "352", "358", "362", "374", "376", "386", "394", "399", "412", "415", "421", "428", "432"],
+    5: ["175", "176", "177", "178", "179", "180", "181", "182", "183", "184", "185", "186", "187", "188", "189", "190", "191", "192", "193", "194", "195", "196", "197", "198", "199", "200", "201", "202", "203", "233", "244", "262", "269", "271", "273", "275", "283", "285", "306", "307", "323", "328", "331", "335", "340", "343", "350", "354", "365", "367", "383", "384", "388", "398", "410", "424", "427", "433", "434", "436"],
+    6: ["204", "205", "206", "207", "208", "209", "210", "211", "212", "213", "214", "215", "216", "217", "218", "219", "220", "221", "222", "223", "224", "225", "226", "227", "228", "229", "230", "231", "232", "234", "238", "243", "245", "246", "252", "258", "261", "278", "289", "304", "322", "326", "329", "333", "334", "338", "347", "356", "361", "372", "373", "378", "395", "397", "406", "407", "413", "422", "429", "437"]
+}
+
 export const cardsDb =    {
     "1": {
         "name": "A Worthy Skull",
@@ -939,6 +948,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "117": {
+        "name" : "A Claim Retaken",
         "faction": 5,
         "type": 0,
         "rule": "Score this in an end phase if a friendly fighter holds an objective that an enemy fighter held at the beginning of the preceding action phase",
@@ -946,6 +956,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "118": {
+        "name" : "A Grim Promise",
         "faction": 5,
         "type": 0,
         "rule": "Score this in an end phase if your warband took an enemy leader out of action in the preceding action phase",
@@ -953,6 +964,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "119": {
+        "name" : "Ferocious Charge",
         "faction": 5,
         "type": 0,
         "rule": "Score this immediately if a friendly fighter takes an enemy fighter out of action with a Charge action",
@@ -960,6 +972,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "120": {
+        "name" : "For The Ur-Gold",
         "faction": 5,
         "type": 0,
         "rule": "Score this in an end phase if all your surviving fighters (at least three) are Inspired",
@@ -967,6 +980,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "121": {
+        "name" : "Fury of the Lodge",
         "faction": 5,
         "type": 0,
         "rule": "Score this in an end phase if all of your surviving fighters (at least three) made a Charge action in the preceding action phase",
@@ -974,6 +988,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "122": {
+        "name" : "Hoarders",
         "faction": 5,
         "type": 0,
         "rule": "Score this in an end phase if all of your fighters and no enemy fighters are holding objectives",
@@ -981,6 +996,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "123": {
+        "name" : "Oaths Still to Fulfil",
         "faction": 5,
         "type": 0,
         "rule": "Score this in the third end phase if none of your fighters are out of action",
@@ -988,6 +1004,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "124": {
+        "name" : "Scion of Grminir",
         "faction": 5,
         "type": 0,
         "rule": "Score this immediately if your leader takes an enemy fighter out of action",
@@ -995,6 +1012,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "125": {
+        "name" : "Unstoppable Advance",
         "faction": 5,
         "type": 0,
         "rule": "Score this in an end phase if all of your surviving fighters are in enemy territory",
@@ -1002,6 +1020,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "126": {
+        "name" : "Berserk Fury",
         "faction": 5,
         "type": 1,
         "rule": "The first time a friendly fighter suffers damage in the next activation, roll a defence dice. If the result is a Shield they suffer no damage",
@@ -1009,6 +1028,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "127": {
+        "name" : "Indomitable",
         "faction": 5,
         "type": 1,
         "rule": "The first time a friendly fighter suffers damage in the next activation, they only suffer 1 damage",
@@ -1016,6 +1036,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "128": {
+        "name" : "Living Wall",
         "faction": 5,
         "type": 1,
         "rule": "Choose two friendly fighters and push each of them up to one hex. They must end up adjacent to one another",
@@ -1023,6 +1044,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "129": {
+        "name" : "Oathsworn",
         "faction": 5,
         "type": 1,
         "rule": "Reaction: Play this after a friendly fighter's Attack action that fails. That fighter can make another Attack action that targets the same fighter",
@@ -1030,6 +1052,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "130": {
+        "name" : "Piercing Stare",
         "faction": 5,
         "type": 1,
         "rule": "Choose an enemy fighter. They cannot make an Attack action or a Charge action in the next activation",
@@ -1037,6 +1060,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "131": {
+        "name" : "Slaying Blow",
         "faction": 5,
         "type": 1,
         "rule": "If the first Attack action in the next activation is a critical hit, double its Damage characteristic",
@@ -1044,6 +1068,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "132": {
+        "name" : "The Earth Shakes",
         "faction": 5,
         "type": 1,
         "rule": "Choose a fighter and push them one hex",
@@ -1051,6 +1076,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "133": {
+        "name" : "Treasure-lust",
         "faction": 5,
         "type": 1,
         "rule": "Choose a friendly fighter and push them up to three hexes. They must end up holding an objective",
@@ -1058,6 +1084,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "134": {
+        "name" : "Ur-Gold Boon",
         "faction": 5,
         "type": 1,
         "rule": "Choose a friendly fighter and roll a defence dice. On a roll of Shield or Critical Hit remove up to two wound tokens from them. Otherwise remove one wound token from them",
@@ -1065,6 +1092,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "135": {
+        "name" : "We Shall Not Be Moved",
         "faction": 5,
         "type": 1,
         "rule": "Friendly fighters holding objectives cannot be driven back by the first Attack action in the next activation",
@@ -1072,6 +1100,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "136": {
+        "name" : "Activated Runes",
         "faction": 5,
         "type": 2,
         "rule": "Each time this fighter make an Attack action, you can re-roll one dice",
@@ -1079,6 +1108,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "137": {
+        "name" : "Brute Strength",
         "faction": 5,
         "type": 2,
         "rule": "This fighter's Attack actions gain Knockback 1",
@@ -1086,6 +1116,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "138": {
+        "name" : "Defiant Strike",
         "faction": 5,
         "type": 2,
         "rule": "Hex 1 Sword 3 Damage 1 Reaction: During an Attack action that succeeds against this fighter, this fighter cannot be driven back and makes this Attack action. It must target the attacker.",
@@ -1093,6 +1124,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "139": {
+        "name" : "Flurry of Blows",
         "faction": 5,
         "type": 2,
         "rule": "Hex 1 Sword 3 Damage 2",
@@ -1100,6 +1132,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "140": {
+        "name" : "Great Swing",
         "faction": 5,
         "type": 2,
         "rule": "Hex 1 Sword 2 Damage 2 Targets all adjacent enemy fighters - roll for each",
@@ -1107,6 +1140,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "141": {
+        "name" : "Grimnir's Blessing",
         "faction": 5,
         "type": 2,
         "rule": "Reaction: During an Attack action or ploy that would take this fighter out of action, roll a defence dice. If you roll a Shield the damage suffered by this fighter is ignored",
@@ -1114,6 +1148,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "142": {
+        "name" : "Grimnir's Fortitude",
         "faction": 5,
         "type": 2,
         "rule": "+1 Defence",
@@ -1121,6 +1156,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "143": {
+        "name" : "Grimnir's Speed",
         "faction": 5,
         "type": 2,
         "rule": "+2 Move",
@@ -1128,6 +1164,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "144": {
+        "name" : "Returning Axe",
         "faction": 5,
         "type": 2,
         "rule": "Hex 3 Sword 2 Damage 1 On a critical hit this Attack action has +1 Damage",
@@ -1135,6 +1172,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "145": {
+        "name" : "War Song",
         "faction": 5,
         "type": 2,
         "rule": "This fighter is considered to be two supporting fighters when they support, rather than one",
@@ -1142,6 +1180,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "146": {
+        "name" : "Arm's Length",
         "faction": 6,
         "type": 0,
         "rule": "Score this immediately if your warband takes an enemy fighter out of action while they are adjacent to none of your fighters",
@@ -1149,6 +1188,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "147": {
+        "name" : "Brilliant, Brilliant!",
         "faction": 6,
         "type": 0,
         "rule": "Score this in an end phase if you scored two or more other objective cards in the preceding action phase",
@@ -1156,6 +1196,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "148": {
+        "name" : "Feast-feast",
         "faction": 6,
         "type": 0,
         "rule": "Score this in an end phase if all enemy fighters have been taken out of action",
@@ -1163,6 +1204,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "149": {
+        "name" : "Honed Survival Instincts",
         "faction": 6,
         "type": 0,
         "rule": "Score this in an end phase if no friendly fighter was taken out of action in the preceding action phase",
@@ -1170,6 +1212,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "150": {
+        "name" : "Leading from the Back",
         "faction": 6,
         "type": 0,
         "rule": "Score this in the third end phase if your leader is in your territory and not adjacent to an enemy",
@@ -1177,6 +1220,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "151": {
+        "name" : "Live to Fight Another Day",
         "faction": 6,
         "type": 0,
         "rule": "Score this in the third end phase if the only surviving friendly fighter is your leader",
@@ -1184,6 +1228,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "152": {
+        "name" : "Lives Are Cheap",
         "faction": 6,
         "type": 0,
         "rule": "Score this in an end phase if two or more friendly fighters were taken out of action in the preceding action phase",
@@ -1191,6 +1236,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "153": {
+        "name" : "Numberless Swarm",
         "faction": 6,
         "type": 0,
         "rule": "Score this in the third end phase if there are five friendly fighters on the battlefield",
@@ -1198,6 +1244,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "154": {
+        "name" : "Skritch is The Greatest, Yes-yes",
         "faction": 6,
         "type": 0,
         "rule": "Score this immediately if your leader takes an enemy fighter out of action",
@@ -1205,6 +1252,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "155": {
+        "name" : "Aversion to Death",
         "faction": 6,
         "type": 1,
         "rule": "Reaction: Play this after an Attack action that takes a friendly fighter out of action. Push up to two friendly fighters one hex each",
@@ -1212,6 +1260,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "156": {
+        "name" : "Frenzied Stabbing",
         "faction": 6,
         "type": 1,
         "rule": "The first Attack action with a Range of 1 or 2 in the next activation has +1 Damage",
@@ -1219,6 +1268,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "157": {
+        "name" : "Heightened Caution",
         "faction": 6,
         "type": 1,
         "rule": "Roll an extra defence dice for the first friendly fighter to be targeted by an Attack action in the next activation",
@@ -1226,6 +1276,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "158": {
+        "name" : "Momentary Boldness",
         "faction": 6,
         "type": 1,
         "rule": "Choose a friendly fighter adjacent to two or more friendly fighters. That fighter makes a Charge action",
@@ -1233,6 +1284,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "159": {
+        "name" : "Musk of Fear",
         "faction": 6,
         "type": 1,
         "rule": "Choose a friendly fighter and put them on Guard",
@@ -1240,6 +1292,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "160": {
+        "name" : "Nervous Scrabbling",
         "faction": 6,
         "type": 1,
         "rule": "Choose a friendly fighter. They switch places with any adjacent fighter",
@@ -1247,6 +1300,7 @@ export const cardsDb =    {
         "faq": ""
     },
     "161": {
+        "name" : "Scratching in the Shadows",
         "faction": 6,
         "type": 1,
         "rule": "Choose an enemy fighter and push them one hex",
@@ -1254,6 +1308,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "162": {
+        "name" : "Skaven Courage",
         "faction": 6,
         "type": 1,
         "rule": "Play this if there are at least three friendly fighters adjacent to the same enemy fighter. One of those friendly fighters can make an Attack action",
@@ -1261,6 +1316,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "163": {
+        "name" : "Sudden Skittering",
         "faction": 6,
         "type": 1,
         "rule": "Double the Move characteristic of the first friendly fighter to make a Move action in the next activation. They may not make a Charge action. Once they have moved, they cannot be activated again this phase",
@@ -1268,6 +1324,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "164": {
+        "name" : "There Are Always More",
         "faction": 6,
         "type": 1,
         "rule": "Choose one friendly fighter that is out of action (other than Skritch or Krrk). Remove all wound tokens from them and place them on any starting hex",
@@ -1275,6 +1332,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "165": {
+        "name" : "Black Hunger",
         "faction": 6,
         "type": 2,
         "rule": "This fighter's Attack actions with a Range of 1 have +1 Damage, and target all adjacent fighters (friend and foe) - roll for each. Fighters do not provide support for Attack actions against friendly models (in attack or defence)",
@@ -1282,6 +1340,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "166": {
+        "name" : "Bodyguard for a Price",
         "faction": 6,
         "type": 2,
         "rule": "If Skritch is adjacent to this fighter, Skritch is on Guard (even if Skritch has made a Charge action this phase)",
@@ -1289,6 +1348,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "167": {
+        "name" : "Expendable",
         "faction": 6,
         "type": 2,
         "rule": "Reaction: During an Attack action that will cause any damage to this fighter, you can remove them from the battlefield and deal 1 damage to their attacker",
@@ -1296,6 +1356,7 @@ export const cardsDb =    {
         "faq": ""
     },
     "168": {
+        "name" : "Festering Blades",
         "faction": 6,
         "type": 2,
         "rule": "On a critical hit, this fighter's Attack actions with a Range of 1 or 2 have +2 Damage",
@@ -1303,6 +1364,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "169": {
+        "name" : "Flee!",
         "faction": 6,
         "type": 2,
         "rule": "Action: This fighter and one adjacent friendly fighter can make a Move action. Both fighters must end their move further away from all enemy fighters",
@@ -1310,6 +1372,7 @@ export const cardsDb =    {
         "faq": ""
     },
     "170": {
+        "name" : "Skitter-scurry",
         "faction": 6,
         "type": 2,
         "rule": "Reaction: After any action that this fighter makes, you can push this fighter one hex",
@@ -1317,6 +1380,7 @@ export const cardsDb =    {
         "faq": ""
     },
     "171": {
+        "name" : "Sneaky Stab-stab",
         "faction": 6,
         "type": 2,
         "rule": "You can push this fighter one hex before they take an Attack action, though not when this fighter takes a Charge action",
@@ -1324,6 +1388,7 @@ export const cardsDb =    {
         "faq": ""
     },
     "172": {
+        "name" : "Swarm of Rats",
         "faction": 6,
         "type": 2,
         "rule": "Hex 1 Sword 3 Damage 1 Targets all adjacent enemy fighters - roll for each",
@@ -1331,6 +1396,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "173": {
+        "name" : "Throwing Stars",
         "faction": 6,
         "type": 2,
         "rule": "Hex 3 Sword 3 Damage 1",
@@ -1338,6 +1404,7 @@ export const cardsDb =    {
         "faq": "-"
     },
     "174": {
+        "name" : "Whirling Halberd",
         "faction": 6,
         "type": 2,
         "rule": "Hex 1 Sword 2 Damage 2 Targets all adjacent enemy fighters - roll for each",
